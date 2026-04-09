@@ -1,6 +1,7 @@
 import { NextRequest } from "next/server";
 import { cookies as nextCookies, draftMode } from "next/headers";
 import { NextApiRequest } from "next";
+import { redirect } from "next/navigation";
 
 const PreviewCookies = {
   PREVIEW_DATA: "__next_preview_data",
@@ -132,13 +133,7 @@ export async function GET(request: NextRequest) {
       "Set-Cookie": convertedCookies,
     });
 
-    return new Response(html, {
-      status: 200,
-      headers: {
-        "Content-Type": "text/html; charset=utf-8",
-        "Set-Cookie": convertedCookies,
-      },
-    });
+    redirect('/test');
   } catch (error) {
     console.error(error);
     return new Response(null, { status: 500 });
