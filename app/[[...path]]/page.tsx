@@ -29,5 +29,8 @@ export const generateStaticParams = async () => {
     {
       path: [],
     },
+    {
+      path: ["test"],
+    },
   ];
 };
