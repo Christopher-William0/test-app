@@ -6,7 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "https://github.com/Christopher-William0/next.js/raw/fix/draftmode-dynamic-rendering/packages/next/next-16.2.1-canary.34.tgz",
+    "next": "https://github.com/Christopher-William0/next.js/releases/download/v16.2.1-canary.34-draftmode-fix/next-16.2.1-canary.34.tgz"
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
